@@ -20,3 +20,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.7
       - uses: articulate/actions-markdownlint@v1.1.0
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - uses: azohra/shell-linter@v0.6.0
